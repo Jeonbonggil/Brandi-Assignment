@@ -1,0 +1,6 @@
+framework module Pods_Brandi_AssignmentTests {
+  umbrella header "Pods-Brandi-AssignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

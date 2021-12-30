@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C007F9618BF9899C6A2D69D6 /* Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8C587C0E7446EA0E3C2319 /* Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework */; };
+		E666266F50340A6BDE66C430 /* Pods_Brandi_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E107EC21E8D4051CAC9C76 /* Pods_Brandi_AssignmentTests.framework */; };
+		F47BE02C2ECAF9C0D141A7AA /* Pods_Brandi_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC158F7F15ACC19152FCC3C2 /* Pods_Brandi_Assignment.framework */; };
+		FCC6E038277D99FF0012379F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E037277D99FF0012379F /* AppDelegate.swift */; };
+		FCC6E03A277D99FF0012379F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E039277D99FF0012379F /* SceneDelegate.swift */; };
+		FCC6E03F277D99FF0012379F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6E03D277D99FF0012379F /* Main.storyboard */; };
+		FCC6E041277D9A030012379F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6E040277D9A030012379F /* Assets.xcassets */; };
+		FCC6E044277D9A030012379F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6E042277D9A030012379F /* LaunchScreen.storyboard */; };
+		FCC6E04F277D9A040012379F /* Brandi_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E04E277D9A040012379F /* Brandi_AssignmentTests.swift */; };
+		FCC6E05A277D9A040012379F /* Brandi_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E059277D9A040012379F /* Brandi_AssignmentUITests.swift */; };
+		FCC6E07C277D9A6B0012379F /* ImageDetatilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E068277D9A6B0012379F /* ImageDetatilViewController.swift */; };
+		FCC6E07D277D9A6B0012379F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E06A277D9A6B0012379F /* ImageView.swift */; };
+		FCC6E07E277D9A6B0012379F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E06D277D9A6B0012379F /* SearchBarView.swift */; };
+		FCC6E07F277D9A6B0012379F /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E06F277D9A6B0012379F /* SearchResultViewModel.swift */; };
+		FCC6E080277D9A6B0012379F /* SearchResultCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E071277D9A6B0012379F /* SearchResultCollectionView.swift */; };
+		FCC6E081277D9A6B0012379F /* SearchResultCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E072277D9A6B0012379F /* SearchResultCollectionCell.swift */; };
+		FCC6E082277D9A6B0012379F /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E073277D9A6B0012379F /* SearchResultViewController.swift */; };
+		FCC6E083277D9A6B0012379F /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E074277D9A6B0012379F /* SearchResultView.swift */; };
+		FCC6E084277D9A6B0012379F /* SearchOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E076277D9A6B0012379F /* SearchOption.swift */; };
+		FCC6E085277D9A6B0012379F /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E077277D9A6B0012379F /* SearchResultModel.swift */; };
+		FCC6E086277D9A6B0012379F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E078277D9A6B0012379F /* Document.swift */; };
+		FCC6E087277D9A6B0012379F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E07A277D9A6B0012379F /* APIError.swift */; };
+		FCC6E088277D9A6B0012379F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E07B277D9A6B0012379F /* APIManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCC6E04B277D9A040012379F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC6E02C277D99FF0012379F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC6E033277D99FF0012379F;
+			remoteInfo = "Brandi-Assignment";
+		};
+		FCC6E056277D9A040012379F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC6E02C277D99FF0012379F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC6E033277D99FF0012379F;
+			remoteInfo = "Brandi-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14FB3945179CA2B8FF7D6FB8 /* Pods-Brandi-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-Assignment.release.xcconfig"; path = "Target Support Files/Pods-Brandi-Assignment/Pods-Brandi-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		17E058C9E1031C5AB0B087C2 /* Pods-Brandi-AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Brandi-AssignmentTests/Pods-Brandi-AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A8C587C0E7446EA0E3C2319 /* Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD0F18EEDA9EF4C643915E2 /* Pods-Brandi-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Brandi-AssignmentTests/Pods-Brandi-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		815CDDAF39FC84D56A1D9363 /* Pods-Brandi-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Brandi-Assignment/Pods-Brandi-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		CC158F7F15ACC19152FCC3C2 /* Pods_Brandi_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brandi_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8572AD48C27EB50311EC7BD /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Brandi-Assignment-Brandi-AssignmentUITests/Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E890C520E263BC468514DF4D /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brandi-Assignment-Brandi-AssignmentUITests/Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1E107EC21E8D4051CAC9C76 /* Pods_Brandi_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brandi_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC6E034277D99FF0012379F /* Brandi-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brandi-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC6E037277D99FF0012379F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCC6E039277D99FF0012379F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCC6E03E277D99FF0012379F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCC6E040277D9A030012379F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCC6E043277D9A030012379F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCC6E045277D9A030012379F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC6E04A277D9A040012379F /* Brandi-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brandi-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC6E04E277D9A040012379F /* Brandi_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brandi_AssignmentTests.swift; sourceTree = "<group>"; };
+		FCC6E050277D9A040012379F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC6E055277D9A040012379F /* Brandi-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brandi-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC6E059277D9A040012379F /* Brandi_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brandi_AssignmentUITests.swift; sourceTree = "<group>"; };
+		FCC6E05B277D9A040012379F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC6E068277D9A6B0012379F /* ImageDetatilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetatilViewController.swift; sourceTree = "<group>"; };
+		FCC6E06A277D9A6B0012379F /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FCC6E06D277D9A6B0012379F /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		FCC6E06F277D9A6B0012379F /* SearchResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		FCC6E071277D9A6B0012379F /* SearchResultCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionView.swift; sourceTree = "<group>"; };
+		FCC6E072277D9A6B0012379F /* SearchResultCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionCell.swift; sourceTree = "<group>"; };
+		FCC6E073277D9A6B0012379F /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		FCC6E074277D9A6B0012379F /* SearchResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		FCC6E076277D9A6B0012379F /* SearchOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchOption.swift; sourceTree = "<group>"; };
+		FCC6E077277D9A6B0012379F /* SearchResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
+		FCC6E078277D9A6B0012379F /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		FCC6E07A277D9A6B0012379F /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		FCC6E07B277D9A6B0012379F /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCC6E031277D99FF0012379F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47BE02C2ECAF9C0D141A7AA /* Pods_Brandi_Assignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC6E047277D9A040012379F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E666266F50340A6BDE66C430 /* Pods_Brandi_AssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC6E052277D9A040012379F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C007F9618BF9899C6A2D69D6 /* Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		219998EF7B2BBC4D0A129A9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC158F7F15ACC19152FCC3C2 /* Pods_Brandi_Assignment.framework */,
+				4A8C587C0E7446EA0E3C2319 /* Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework */,
+				F1E107EC21E8D4051CAC9C76 /* Pods_Brandi_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C97746E33B90DA11F9A510C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				815CDDAF39FC84D56A1D9363 /* Pods-Brandi-Assignment.debug.xcconfig */,
+				14FB3945179CA2B8FF7D6FB8 /* Pods-Brandi-Assignment.release.xcconfig */,
+				E890C520E263BC468514DF4D /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig */,
+				D8572AD48C27EB50311EC7BD /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig */,
+				5FD0F18EEDA9EF4C643915E2 /* Pods-Brandi-AssignmentTests.debug.xcconfig */,
+				17E058C9E1031C5AB0B087C2 /* Pods-Brandi-AssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCC6E02B277D99FF0012379F = {
+			isa = PBXGroup;
+			children = (
+				FCC6E036277D99FF0012379F /* Brandi-Assignment */,
+				FCC6E04D277D9A040012379F /* Brandi-AssignmentTests */,
+				FCC6E058277D9A040012379F /* Brandi-AssignmentUITests */,
+				FCC6E035277D99FF0012379F /* Products */,
+				6C97746E33B90DA11F9A510C /* Pods */,
+				219998EF7B2BBC4D0A129A9C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCC6E035277D99FF0012379F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E034277D99FF0012379F /* Brandi-Assignment.app */,
+				FCC6E04A277D9A040012379F /* Brandi-AssignmentTests.xctest */,
+				FCC6E055277D9A040012379F /* Brandi-AssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCC6E036277D99FF0012379F /* Brandi-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E079277D9A6B0012379F /* APIManager */,
+				FCC6E069277D9A6B0012379F /* Extension */,
+				FCC6E06B277D9A6B0012379F /* SearchResult */,
+				FCC6E067277D9A6B0012379F /* ImageDetail */,
+				FCC6E037277D99FF0012379F /* AppDelegate.swift */,
+				FCC6E039277D99FF0012379F /* SceneDelegate.swift */,
+				FCC6E03D277D99FF0012379F /* Main.storyboard */,
+				FCC6E040277D9A030012379F /* Assets.xcassets */,
+				FCC6E042277D9A030012379F /* LaunchScreen.storyboard */,
+				FCC6E045277D9A030012379F /* Info.plist */,
+			);
+			path = "Brandi-Assignment";
+			sourceTree = "<group>";
+		};
+		FCC6E04D277D9A040012379F /* Brandi-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E04E277D9A040012379F /* Brandi_AssignmentTests.swift */,
+				FCC6E050277D9A040012379F /* Info.plist */,
+			);
+			path = "Brandi-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		FCC6E058277D9A040012379F /* Brandi-AssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E059277D9A040012379F /* Brandi_AssignmentUITests.swift */,
+				FCC6E05B277D9A040012379F /* Info.plist */,
+			);
+			path = "Brandi-AssignmentUITests";
+			sourceTree = "<group>";
+		};
+		FCC6E067277D9A6B0012379F /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E068277D9A6B0012379F /* ImageDetatilViewController.swift */,
+			);
+			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		FCC6E069277D9A6B0012379F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E06A277D9A6B0012379F /* ImageView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FCC6E06B277D9A6B0012379F /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E073277D9A6B0012379F /* SearchResultViewController.swift */,
+				FCC6E074277D9A6B0012379F /* SearchResultView.swift */,
+				FCC6E06C277D9A6B0012379F /* SearchBar */,
+				FCC6E070277D9A6B0012379F /* CollectionView */,
+				FCC6E06E277D9A6B0012379F /* ViewModel */,
+				FCC6E075277D9A6B0012379F /* Model */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		FCC6E06C277D9A6B0012379F /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E06D277D9A6B0012379F /* SearchBarView.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		FCC6E06E277D9A6B0012379F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E06F277D9A6B0012379F /* SearchResultViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCC6E070277D9A6B0012379F /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E071277D9A6B0012379F /* SearchResultCollectionView.swift */,
+				FCC6E072277D9A6B0012379F /* SearchResultCollectionCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		FCC6E075277D9A6B0012379F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E076277D9A6B0012379F /* SearchOption.swift */,
+				FCC6E077277D9A6B0012379F /* SearchResultModel.swift */,
+				FCC6E078277D9A6B0012379F /* Document.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCC6E079277D9A6B0012379F /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				FCC6E07A277D9A6B0012379F /* APIError.swift */,
+				FCC6E07B277D9A6B0012379F /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCC6E033277D99FF0012379F /* Brandi-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC6E05E277D9A040012379F /* Build configuration list for PBXNativeTarget "Brandi-Assignment" */;
+			buildPhases = (
+				C801A685009FC942F20AF9FA /* [CP] Check Pods Manifest.lock */,
+				FCC6E030277D99FF0012379F /* Sources */,
+				FCC6E031277D99FF0012379F /* Frameworks */,
+				FCC6E032277D99FF0012379F /* Resources */,
+				56ED2A791B13D85C1903C54F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brandi-Assignment";
+			productName = "Brandi-Assignment";
+			productReference = FCC6E034277D99FF0012379F /* Brandi-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCC6E049277D9A040012379F /* Brandi-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC6E061277D9A040012379F /* Build configuration list for PBXNativeTarget "Brandi-AssignmentTests" */;
+			buildPhases = (
+				8CDA8E10DBD85E566089E9CA /* [CP] Check Pods Manifest.lock */,
+				FCC6E046277D9A040012379F /* Sources */,
+				FCC6E047277D9A040012379F /* Frameworks */,
+				FCC6E048277D9A040012379F /* Resources */,
+				C4CB21472B80C323DB1BA5FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC6E04C277D9A040012379F /* PBXTargetDependency */,
+			);
+			name = "Brandi-AssignmentTests";
+			productName = "Brandi-AssignmentTests";
+			productReference = FCC6E04A277D9A040012379F /* Brandi-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCC6E054277D9A040012379F /* Brandi-AssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC6E064277D9A040012379F /* Build configuration list for PBXNativeTarget "Brandi-AssignmentUITests" */;
+			buildPhases = (
+				D6BE5BEAC37929AADEE0FCA4 /* [CP] Check Pods Manifest.lock */,
+				FCC6E051277D9A040012379F /* Sources */,
+				FCC6E052277D9A040012379F /* Frameworks */,
+				FCC6E053277D9A040012379F /* Resources */,
+				06D5427D5CE86DAF98635D8D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC6E057277D9A040012379F /* PBXTargetDependency */,
+			);
+			name = "Brandi-AssignmentUITests";
+			productName = "Brandi-AssignmentUITests";
+			productReference = FCC6E055277D9A040012379F /* Brandi-AssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCC6E02C277D99FF0012379F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FCC6E033277D99FF0012379F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FCC6E049277D9A040012379F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FCC6E033277D99FF0012379F;
+					};
+					FCC6E054277D9A040012379F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FCC6E033277D99FF0012379F;
+					};
+				};
+			};
+			buildConfigurationList = FCC6E02F277D99FF0012379F /* Build configuration list for PBXProject "Brandi-Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCC6E02B277D99FF0012379F;
+			productRefGroup = FCC6E035277D99FF0012379F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCC6E033277D99FF0012379F /* Brandi-Assignment */,
+				FCC6E049277D9A040012379F /* Brandi-AssignmentTests */,
+				FCC6E054277D9A040012379F /* Brandi-AssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCC6E032277D99FF0012379F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC6E044277D9A030012379F /* LaunchScreen.storyboard in Resources */,
+				FCC6E041277D9A030012379F /* Assets.xcassets in Resources */,
+				FCC6E03F277D99FF0012379F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC6E048277D9A040012379F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC6E053277D9A040012379F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06D5427D5CE86DAF98635D8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brandi-Assignment-Brandi-AssignmentUITests/Pods-Brandi-Assignment-Brandi-AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brandi-Assignment-Brandi-AssignmentUITests/Pods-Brandi-Assignment-Brandi-AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brandi-Assignment-Brandi-AssignmentUITests/Pods-Brandi-Assignment-Brandi-AssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56ED2A791B13D85C1903C54F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brandi-Assignment/Pods-Brandi-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brandi-Assignment/Pods-Brandi-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brandi-Assignment/Pods-Brandi-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CDA8E10DBD85E566089E9CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brandi-AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CB21472B80C323DB1BA5FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brandi-AssignmentTests/Pods-Brandi-AssignmentTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brandi-AssignmentTests/Pods-Brandi-AssignmentTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brandi-AssignmentTests/Pods-Brandi-AssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C801A685009FC942F20AF9FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brandi-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6BE5BEAC37929AADEE0FCA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brandi-Assignment-Brandi-AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCC6E030277D99FF0012379F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC6E088277D9A6B0012379F /* APIManager.swift in Sources */,
+				FCC6E07F277D9A6B0012379F /* SearchResultViewModel.swift in Sources */,
+				FCC6E07D277D9A6B0012379F /* ImageView.swift in Sources */,
+				FCC6E082277D9A6B0012379F /* SearchResultViewController.swift in Sources */,
+				FCC6E085277D9A6B0012379F /* SearchResultModel.swift in Sources */,
+				FCC6E07C277D9A6B0012379F /* ImageDetatilViewController.swift in Sources */,
+				FCC6E084277D9A6B0012379F /* SearchOption.swift in Sources */,
+				FCC6E038277D99FF0012379F /* AppDelegate.swift in Sources */,
+				FCC6E087277D9A6B0012379F /* APIError.swift in Sources */,
+				FCC6E083277D9A6B0012379F /* SearchResultView.swift in Sources */,
+				FCC6E07E277D9A6B0012379F /* SearchBarView.swift in Sources */,
+				FCC6E081277D9A6B0012379F /* SearchResultCollectionCell.swift in Sources */,
+				FCC6E080277D9A6B0012379F /* SearchResultCollectionView.swift in Sources */,
+				FCC6E086277D9A6B0012379F /* Document.swift in Sources */,
+				FCC6E03A277D99FF0012379F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC6E046277D9A040012379F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC6E04F277D9A040012379F /* Brandi_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC6E051277D9A040012379F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC6E05A277D9A040012379F /* Brandi_AssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCC6E04C277D9A040012379F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC6E033277D99FF0012379F /* Brandi-Assignment */;
+			targetProxy = FCC6E04B277D9A040012379F /* PBXContainerItemProxy */;
+		};
+		FCC6E057277D9A040012379F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC6E033277D99FF0012379F /* Brandi-Assignment */;
+			targetProxy = FCC6E056277D9A040012379F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCC6E03D277D99FF0012379F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC6E03E277D99FF0012379F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCC6E042277D9A030012379F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC6E043277D9A030012379F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCC6E05C277D9A040012379F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCC6E05D277D9A040012379F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCC6E05F277D9A040012379F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815CDDAF39FC84D56A1D9363 /* Pods-Brandi-Assignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH2D7MUGD3;
+				INFOPLIST_FILE = "Brandi-Assignment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jbk.Brandi-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCC6E060277D9A040012379F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FB3945179CA2B8FF7D6FB8 /* Pods-Brandi-Assignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH2D7MUGD3;
+				INFOPLIST_FILE = "Brandi-Assignment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jbk.Brandi-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCC6E062277D9A040012379F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD0F18EEDA9EF4C643915E2 /* Pods-Brandi-AssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH2D7MUGD3;
+				INFOPLIST_FILE = "Brandi-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jbk.Brandi-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brandi-Assignment.app/Brandi-Assignment";
+			};
+			name = Debug;
+		};
+		FCC6E063277D9A040012379F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E058C9E1031C5AB0B087C2 /* Pods-Brandi-AssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH2D7MUGD3;
+				INFOPLIST_FILE = "Brandi-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jbk.Brandi-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brandi-Assignment.app/Brandi-Assignment";
+			};
+			name = Release;
+		};
+		FCC6E065277D9A040012379F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E890C520E263BC468514DF4D /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH2D7MUGD3;
+				INFOPLIST_FILE = "Brandi-AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jbk.Brandi-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brandi-Assignment";
+			};
+			name = Debug;
+		};
+		FCC6E066277D9A040012379F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8572AD48C27EB50311EC7BD /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LH2D7MUGD3;
+				INFOPLIST_FILE = "Brandi-AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jbk.Brandi-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Brandi-Assignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCC6E02F277D99FF0012379F /* Build configuration list for PBXProject "Brandi-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC6E05C277D9A040012379F /* Debug */,
+				FCC6E05D277D9A040012379F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC6E05E277D9A040012379F /* Build configuration list for PBXNativeTarget "Brandi-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC6E05F277D9A040012379F /* Debug */,
+				FCC6E060277D9A040012379F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC6E061277D9A040012379F /* Build configuration list for PBXNativeTarget "Brandi-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC6E062277D9A040012379F /* Debug */,
+				FCC6E063277D9A040012379F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC6E064277D9A040012379F /* Build configuration list for PBXNativeTarget "Brandi-AssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC6E065277D9A040012379F /* Debug */,
+				FCC6E066277D9A040012379F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCC6E02C277D99FF0012379F /* Project object */;
+}
