@@ -12,7 +12,7 @@ import RxSwift
 class SearchBarView: UISearchBar {
     var searchOption = SearchOption()
     var viewModel: SearchResultViewModel?
-    let disposeBag = DisposeBag()
+    let bag = DisposeBag()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,15 +37,14 @@ extension SearchBarView {
     }
     
     func autoSearch(_ searchBar: UISearchBar) {
-        Observable<Int>
-            .interval(.seconds(1), scheduler: MainScheduler.instance)
-            .take(1)
+        searchBar.rx.text.orEmpty
+            .debounce(.seconds(1), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
                 guard let self = self, let viewModel = self.viewModel, let query = searchBar.searchTextField.text else { return }
                 self.searchOption.query = query.trimmingCharacters(in: .whitespacesAndNewlines)  // 검색어 공백 제거
                 viewModel.searchOption.query = self.searchOption.query
                 viewModel.searchOption.size = 30
-                viewModel.search(searchOption: self.searchOption)
-            }).disposed(by: disposeBag)
+                viewModel.search(searchOption: self.searchOption)   // 검색 API 호출
+            }).disposed(by: bag)
     }
 }
