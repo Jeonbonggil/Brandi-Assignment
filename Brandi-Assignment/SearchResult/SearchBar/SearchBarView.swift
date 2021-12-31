@@ -23,6 +23,7 @@ class SearchBarView: UISearchBar {
 extension SearchBarView: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         autoSearch(searchBar)
+        searchBar.resignFirstResponder()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
