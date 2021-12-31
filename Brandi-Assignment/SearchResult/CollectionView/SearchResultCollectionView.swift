@@ -51,23 +51,29 @@ extension SearchResultCollectionView {
                     if !viewModel.fetchingMore {
                         viewModel.searchOption.size += 30
                         viewModel.search(searchOption: viewModel.searchOption)
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
+                            self.reloadData()
+                        })
                     }
                 }
             }.disposed(by: bag)
+        
+        rx.setDelegate(self).disposed(by: bag)
     }
     
 }
 
 extension SearchResultCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (UIScreen.main.bounds.width - 30.0) / 3.0
+        let width = (collectionView.bounds.width - 30) / 3
         let height = width
-        
+
         return CGSize(width: width, height: height)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 15
     }
-    
+
 }
