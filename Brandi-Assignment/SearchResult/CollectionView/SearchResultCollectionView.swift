@@ -37,26 +37,12 @@ extension SearchResultCollectionView {
         
         Observable.zip(rx.itemSelected, rx.modelSelected(Document.self))
             .bind { [weak self] indexPath, document in
-                self?.viewModel?.presentDetail(document)
+                self?.viewModel?.presentDetail()
             }.disposed(by: bag)
         
         rx.contentOffset
             .subscribe { [weak self] _ in
-                guard let self = self, let viewModel = self.viewModel else { return }
-                let offsetY = self.contentOffset.y
-                let contentHeight = self.contentSize.height
-                
-                // 스크롤이 끝에 닿으면 데이터 더 불러오기
-                if offsetY > contentHeight - self.frame.height {
-                    if !viewModel.fetchingMore {
-                        viewModel.searchOption.size += 30
-                        viewModel.search(searchOption: viewModel.searchOption)
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
-                            self.reloadData()
-                        })
-                    }
-                }
+                self?.viewModel?.searchResultFetchMore(self)
             }.disposed(by: bag)
         
         rx.setDelegate(self).disposed(by: bag)

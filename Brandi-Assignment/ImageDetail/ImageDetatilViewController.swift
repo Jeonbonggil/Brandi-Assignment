@@ -13,8 +13,7 @@ class ImageDetailViewController: UIViewController {
     @IBOutlet weak var siteName: UILabel!
     @IBOutlet weak var dateTime: UILabel!
     
-    var viewModel = SearchResultViewModel()
-    var data: Document? = nil
+    private var viewModel = ImageDetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +22,20 @@ class ImageDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let data = data {
-            imageView.setImageUrl(data.image_url )
-            siteName.text = data.display_sitename
-            dateTime.text = viewModel.dateFormat(date: data.datetime)
-        }
+        imageView.setImageUrl(viewModel.document[viewModel.index].image_url)
+        siteName.text = viewModel.document[viewModel.index].display_sitename
+        dateTime.text = viewModel.dateFormat(viewModel.document[viewModel.index].datetime)
+    }
+}
+
+extension ImageDetailViewController {
+    /// viewModel Set
+    func setViewModel(_ viewModel: SearchResultViewModel?) {
+        guard let _vm = viewModel else { return }
+            self.viewModel = ImageDetailViewModel(api: _vm.apiManager,
+                                                  search: _vm.searchOption,
+                                                  isFetchingMore: _vm.isFetchingMore,
+                                                  document: _vm.savedData,
+                                                  index: _vm.index)
     }
 }

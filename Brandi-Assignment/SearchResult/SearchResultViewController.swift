@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SearchResultDelegate: AnyObject {
-    func sendData(_ data: Document)
+    func presentVC()
 }
 
 class SearchResultViewController: UIViewController {
@@ -24,15 +24,11 @@ class SearchResultViewController: UIViewController {
 }
 
 extension SearchResultViewController: SearchResultDelegate {
-    func sendData(_ data: Document) {
+    func presentVC() {
         guard let imageVC = storyboard?.instantiateViewController(withIdentifier: "ImageDetailViewController") as? ImageDetailViewController else { return }
-        
-        imageVC.data = data
+        imageVC.setViewModel(viewModel)
         modalPresentationStyle = .fullScreen
-        
-        DispatchQueue.main.async {
-            self.present(imageVC, animated: true, completion: nil)
-        }
+        self.present(imageVC, animated: true, completion: nil)
     }
     
 }

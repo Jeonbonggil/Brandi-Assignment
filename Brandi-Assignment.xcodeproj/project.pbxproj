@@ -10,6 +10,7 @@
 		C007F9618BF9899C6A2D69D6 /* Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8C587C0E7446EA0E3C2319 /* Pods_Brandi_Assignment_Brandi_AssignmentUITests.framework */; };
 		E666266F50340A6BDE66C430 /* Pods_Brandi_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E107EC21E8D4051CAC9C76 /* Pods_Brandi_AssignmentTests.framework */; };
 		F47BE02C2ECAF9C0D141A7AA /* Pods_Brandi_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC158F7F15ACC19152FCC3C2 /* Pods_Brandi_Assignment.framework */; };
+		FC7D917D2782DDCB00A479D5 /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D917C2782DDCB00A479D5 /* ImageDetailViewModel.swift */; };
 		FCC6E038277D99FF0012379F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E037277D99FF0012379F /* AppDelegate.swift */; };
 		FCC6E03A277D99FF0012379F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6E039277D99FF0012379F /* SceneDelegate.swift */; };
 		FCC6E03F277D99FF0012379F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6E03D277D99FF0012379F /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		D8572AD48C27EB50311EC7BD /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Brandi-Assignment-Brandi-AssignmentUITests/Pods-Brandi-Assignment-Brandi-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E890C520E263BC468514DF4D /* Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Brandi-Assignment-Brandi-AssignmentUITests/Pods-Brandi-Assignment-Brandi-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1E107EC21E8D4051CAC9C76 /* Pods_Brandi_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brandi_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7D917C2782DDCB00A479D5 /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
 		FCC6E034277D99FF0012379F /* Brandi-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brandi-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC6E037277D99FF0012379F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCC6E039277D99FF0012379F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FC7D917B2782DDA900A479D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D917C2782DDCB00A479D5 /* ImageDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FCC6E02B277D99FF0012379F = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC6E068277D9A6B0012379F /* ImageDetatilViewController.swift */,
+				FC7D917B2782DDA900A479D5 /* ViewModel */,
 			);
 			path = ImageDetail;
 			sourceTree = "<group>";
@@ -531,6 +542,7 @@
 				FCC6E085277D9A6B0012379F /* SearchResultModel.swift in Sources */,
 				FCC6E07C277D9A6B0012379F /* ImageDetatilViewController.swift in Sources */,
 				FCC6E084277D9A6B0012379F /* SearchOption.swift in Sources */,
+				FC7D917D2782DDCB00A479D5 /* ImageDetailViewModel.swift in Sources */,
 				FCC6E038277D99FF0012379F /* AppDelegate.swift in Sources */,
 				FCC6E087277D9A6B0012379F /* APIError.swift in Sources */,
 				FCC6E083277D9A6B0012379F /* SearchResultView.swift in Sources */,
