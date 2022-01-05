@@ -8,26 +8,24 @@
 import UIKit
 
 protocol SearchResultDelegate: AnyObject {
-    func presentVC()
+    func presentVC(_ viewModel: SearchResultViewModel)
 }
 
 class SearchResultViewController: UIViewController {
     @IBOutlet weak var searchView: SearchResultView!
     
-    let viewModel = SearchResultViewModel()
+    let viewModel = SearchResultViewModel.EMPTY
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchView.setViewModel(viewModel)
         viewModel.delegate = self
     }
 }
 
 extension SearchResultViewController: SearchResultDelegate {
-    func presentVC() {
+    func presentVC(_ viewModel: SearchResultViewModel) {
         guard let imageVC = storyboard?.instantiateViewController(withIdentifier: "ImageDetailViewController") as? ImageDetailViewController else { return }
         imageVC.setViewModel(viewModel)
-        modalPresentationStyle = .fullScreen
         self.present(imageVC, animated: true, completion: nil)
     }
     

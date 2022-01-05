@@ -15,7 +15,7 @@ class SearchResultViewModel {
     var isFetchingMore = false            // 데이터 더 불러오기 플래그
     var savedData = Array<Document>()   // 페이징 했을때, 검색결과가 더 이상 없을 경우 데이터 저장
     var index = 0
-    let bag = DisposeBag()
+    private let bag = DisposeBag()
     
     weak var delegate: SearchResultDelegate? = nil  // ViewController에 전달할 delegate
     
@@ -26,6 +26,12 @@ class SearchResultViewModel {
     var document: Driver<Array<Document>?> {
         return _document.asDriver()
     }
+    
+    static let EMPTY = SearchResultViewModel(api: APIManager(),
+                                             search: SearchOption(),
+                                             isFetch: false,
+                                             savedData: Array<Document>(),
+                                             index: 0)
     
     init(api: APIManager = APIManager(),
          search: SearchOption = SearchOption(),
@@ -86,7 +92,7 @@ class SearchResultViewModel {
     
     /// ImageDetailViewController 전달할 데이터 함수
     func presentDetail() {
-        delegate?.presentVC()
+        delegate?.presentVC(self)
     }
     
 }

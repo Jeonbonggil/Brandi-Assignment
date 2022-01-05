@@ -10,24 +10,19 @@ import RxSwift
 import RxCocoa
 
 class SearchResultCollectionView: UICollectionView {
-    var viewModel: SearchResultViewModel?
-    var bag = DisposeBag()
+    private let viewModel = SearchResultViewModel.EMPTY
+    private let bag = DisposeBag()
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        bindRx()
     }
 }
 
 extension SearchResultCollectionView {
-    /// ViewModel Setting
-    func setViewModel(_ viewModel: SearchResultViewModel) {
-        self.viewModel = viewModel
-        bindRx()
-    }
-    
     /// CollectionView RxDataSource, RxDelegate
     private func bindRx() {
-        viewModel?.documentModel
+        viewModel.documentModel
             .observe(on: MainScheduler.instance)
             .filter { !($0.isEmpty) }
             .bind(to: rx.items(cellIdentifier: "cell",
@@ -37,12 +32,13 @@ extension SearchResultCollectionView {
         
         Observable.zip(rx.itemSelected, rx.modelSelected(Document.self))
             .bind { [weak self] indexPath, document in
-                self?.viewModel?.presentDetail()
+                self?.viewModel.index = indexPath.row
+                self?.viewModel.presentDetail()
             }.disposed(by: bag)
         
         rx.contentOffset
             .subscribe { [weak self] _ in
-                self?.viewModel?.searchResultFetchMore(self)
+                self?.viewModel.searchResultFetchMore(self)
             }.disposed(by: bag)
         
         rx.setDelegate(self).disposed(by: bag)

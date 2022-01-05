@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class SearchBarView: UISearchBar {
-    var viewModel: SearchResultViewModel?
+    let viewModel = SearchResultViewModel.EMPTY
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,17 +19,11 @@ class SearchBarView: UISearchBar {
 
 extension SearchBarView: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        viewModel?.autoSearch(searchBar)
+        viewModel.autoSearch(searchBar)
         searchBar.resignFirstResponder()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel?.autoSearch(searchBar)
-    }
-}
-
-extension SearchBarView {
-    func setViewModel(_ viewModel: SearchResultViewModel) {
-        self.viewModel = viewModel
+        viewModel.autoSearch(searchBar)
     }
 }

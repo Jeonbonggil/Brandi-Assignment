@@ -14,6 +14,11 @@ class ImageDetailViewModel {
     var document = Array<Document>()   // 페이징 했을때, 검색결과가 더 이상 없을 경우 데이터 저장
     var index = 0
     
+    static let EMPTY = ImageDetailViewModel(api: APIManager(),
+                                            search: SearchOption(),
+                                            isFetchingMore: false,
+                                            document: Array<Document>(), index: 0)
+    
     init(api: APIManager = APIManager(),
          search: SearchOption = SearchOption(),
          isFetchingMore: Bool = false,

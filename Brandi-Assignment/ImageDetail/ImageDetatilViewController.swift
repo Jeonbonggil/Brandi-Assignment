@@ -13,7 +13,7 @@ class ImageDetailViewController: UIViewController {
     @IBOutlet weak var siteName: UILabel!
     @IBOutlet weak var dateTime: UILabel!
     
-    private var viewModel = ImageDetailViewModel()
+    private var viewModel = ImageDetailViewModel.EMPTY
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,10 @@ class ImageDetailViewController: UIViewController {
         imageView.setImageUrl(viewModel.document[viewModel.index].image_url)
         siteName.text = viewModel.document[viewModel.index].display_sitename
         dateTime.text = viewModel.dateFormat(viewModel.document[viewModel.index].datetime)
+    }
+    
+    @IBAction func closeBtnAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
 }
 

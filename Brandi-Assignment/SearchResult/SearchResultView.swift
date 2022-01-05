@@ -13,23 +13,20 @@ class SearchResultView: UIView {
     @IBOutlet weak var collectionView: SearchResultCollectionView!
     @IBOutlet weak var noDataView: UIView!  // 검색결과 없음 View
     
-    var viewModel: SearchResultViewModel?
-    let bag = DisposeBag()
+    private let viewModel = SearchResultViewModel.EMPTY
+    private let bag = DisposeBag()
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setSearchResultView()
     }
 }
 
 extension SearchResultView {
-    func setViewModel(_ viewModel: SearchResultViewModel) {
-        self.viewModel = viewModel
-        searchBar.setViewModel(viewModel)
-        collectionView.setViewModel(viewModel)
-        
+    func setSearchResultView() {
         viewModel.document.drive(onNext: { [weak self] response in
             guard let self = self, (response?.count ?? 0) > 0 else {
-                if viewModel.savedData.count == 0 {
+                if self?.viewModel.savedData.count == 0 {
                     self?.showNoDataView()
                 }
                 
