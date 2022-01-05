@@ -8,22 +8,23 @@
 import Foundation
 
 class ImageDetailViewModel {
-    var apiManager = APIManager()       // API 통신 클래스
-    var searchOption = SearchOption()   // 검색 옵션 모델
-    var isFetchingMore = false            // 데이터 더 불러오기 플래그
-    var document = Array<Document>()   // 페이징 했을때, 검색결과가 더 이상 없을 경우 데이터 저장
-    var index = 0
+    let apiManager: APIManager       // API 통신 클래스
+    let searchOption: SearchOption   // 검색 옵션 모델
+    let isFetchingMore: Bool         // 데이터 더 불러오기 플래그
+    let document: Array<Document>    // 페이징 했을때, 검색결과가 더 이상 없을 경우 데이터 저장
+    let index: Int
     
     static let EMPTY = ImageDetailViewModel(api: APIManager(),
                                             search: SearchOption(),
                                             isFetchingMore: false,
-                                            document: Array<Document>(), index: 0)
+                                            document: [],
+                                            index: 0)
     
-    init(api: APIManager = APIManager(),
-         search: SearchOption = SearchOption(),
-         isFetchingMore: Bool = false,
-         document: [Document] = Array<Document>(),
-         index: Int = 0) {
+    init(api: APIManager,
+         search: SearchOption,
+         isFetchingMore: Bool,
+         document: [Document],
+         index: Int) {
         self.apiManager = api
         self.searchOption = search
         self.isFetchingMore = isFetchingMore

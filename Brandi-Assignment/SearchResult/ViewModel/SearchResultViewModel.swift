@@ -10,13 +10,13 @@ import RxSwift
 import RxCocoa
 
 class SearchResultViewModel {
-    var apiManager = APIManager()       // API 통신 클래스
-    var searchOption = SearchOption()   // 검색 옵션 모델
-    var isFetchingMore = false            // 데이터 더 불러오기 플래그
-    var savedData = Array<Document>()   // 페이징 했을때, 검색결과가 더 이상 없을 경우 데이터 저장
-    var index = 0
-    private let bag = DisposeBag()
+    let apiManager: APIManager       // API 통신 클래스
+    var searchOption: SearchOption   // 검색 옵션 모델
+    var isFetchingMore: Bool         // 데이터 더 불러오기 플래그
+    var savedData: Array<Document>   // 페이징 했을때, 검색결과가 더 이상 없을 경우 데이터 저장
+    var index: Int
     
+    private let bag = DisposeBag()
     weak var delegate: SearchResultDelegate? = nil  // ViewController에 전달할 delegate
     
     /// CollectionView Bind용 모델 변수
@@ -30,14 +30,14 @@ class SearchResultViewModel {
     static let EMPTY = SearchResultViewModel(api: APIManager(),
                                              search: SearchOption(),
                                              isFetch: false,
-                                             savedData: Array<Document>(),
+                                             savedData: [],
                                              index: 0)
     
-    init(api: APIManager = APIManager(),
-         search: SearchOption = SearchOption(),
-         isFetch: Bool = false,
-         savedData: [Document] = Array<Document>(),
-         index: Int = 0) {
+    init(api: APIManager,
+         search: SearchOption,
+         isFetch: Bool,
+         savedData: [Document],
+         index: Int) {
         self.apiManager = api
         self.searchOption = search
         self.isFetchingMore = isFetch
@@ -87,7 +87,6 @@ class SearchResultViewModel {
                 })
             }
         }
-
     }
     
     /// ImageDetailViewController 전달할 데이터 함수
@@ -106,7 +105,6 @@ extension SearchResultViewModel {
             .subscribe(onNext: { [weak self] _ in
                 guard let self = self, let query = searchBar.searchTextField.text else { return }
                 self.searchOption.query = query.trimmingCharacters(in: .whitespacesAndNewlines)  // 검색어 공백 제거
-                self.searchOption.query = self.searchOption.query
                 self.searchOption.size = 30
                 self.search(self.searchOption)   // 검색 API 호출
             }).disposed(by: bag)

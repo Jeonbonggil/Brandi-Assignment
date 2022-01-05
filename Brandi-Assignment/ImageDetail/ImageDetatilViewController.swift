@@ -22,9 +22,11 @@ class ImageDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        imageView.setImageUrl(viewModel.document[viewModel.index].image_url)
-        siteName.text = viewModel.document[viewModel.index].display_sitename
-        dateTime.text = viewModel.dateFormat(viewModel.document[viewModel.index].datetime)
+        let document = viewModel.document
+        let index = viewModel.index
+        imageView.setImageUrl(document[index].image_url)
+        siteName.text = document[index].display_sitename
+        dateTime.text = viewModel.dateFormat(document[index].datetime)
     }
     
     @IBAction func closeBtnAction(_ sender: UIButton) {

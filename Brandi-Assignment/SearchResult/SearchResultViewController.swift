@@ -26,7 +26,7 @@ extension SearchResultViewController: SearchResultDelegate {
     func presentVC(_ viewModel: SearchResultViewModel) {
         guard let imageVC = storyboard?.instantiateViewController(withIdentifier: "ImageDetailViewController") as? ImageDetailViewController else { return }
         imageVC.setViewModel(viewModel)
-        self.present(imageVC, animated: true, completion: nil)
+        present(imageVC, animated: true, completion: nil)
     }
     
 }

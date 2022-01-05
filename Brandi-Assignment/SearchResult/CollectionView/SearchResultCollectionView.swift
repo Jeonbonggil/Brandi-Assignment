@@ -19,8 +19,8 @@ class SearchResultCollectionView: UICollectionView {
     }
 }
 
+//MARK: - CollectionView RxDataSource, RxDelegate
 extension SearchResultCollectionView {
-    /// CollectionView RxDataSource, RxDelegate
     private func bindRx() {
         viewModel.documentModel
             .observe(on: MainScheduler.instance)
@@ -46,6 +46,7 @@ extension SearchResultCollectionView {
     
 }
 
+//MARK: - UICollectionViewDelegateFlowLayout
 extension SearchResultCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (collectionView.bounds.width - 30) / 3
